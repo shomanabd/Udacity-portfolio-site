@@ -1,0 +1,42 @@
+@use '../utils/utils';
+
+.contact-us{
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 2rem 0;
+    @include utils.border(0,bottom);
+    @include utils.flex(column, space-around, center);
+
+    &__form{
+    background-color: #fefcfc;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0% 2rem;
+    @include utils.flex(column, space-around,justify);
+    gap: 0.5rem;
+    }
+
+    &contact-us__form-input{
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    &__form-buttons{
+        @include utils.button-base;
+        background-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        width: 40%;
+        margin-left: 30%;
+        text-align: center;
+
+            &:hover {
+                opacity: 0.7;
+                transform: scale(1.05);
+            }
+    }
+}
+
+

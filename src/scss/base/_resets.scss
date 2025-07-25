@@ -1,0 +1,13 @@
+@use '../utils/utils';
+
+body {
+    font-family: utils.$font-family-primary;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    background-color: #edf3f5;
+    height: 100vh;
+    @include utils.flex(column,space-between,space-between);
+}
+
+

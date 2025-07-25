@@ -1,0 +1,27 @@
+@use 'base/base';
+@use 'utils/utils';
+@use 'blocks/blocks';
+
+
+@include utils.respond(tablet) {
+    .about__content{
+        flex-direction: column;
+    }
+
+    .project{
+        width: 34vw;
+    }
+}
+
+@include utils.respond(mobile) {
+    .projects__list{
+        flex-direction: column;
+    }
+    .about__content{
+        flex-direction: column;
+    }
+    .project{
+        width: 68vw;
+    }
+}
+

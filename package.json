@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-homepage",
+  "version": "1.0.0",
+  "description": "Portfolio Homepage Project",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "sass src/scss/main.scss dist/main.css --style=compressed",
+    "watch": "sass --watch src/scss/main.scss:dist/main.css",
+    "dev": "sass --watch src/scss/main.scss:dist/main.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

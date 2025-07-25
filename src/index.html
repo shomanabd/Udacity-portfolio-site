@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="../dist/main.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <header class="header">
+          <nav class="header__nav">
+              <ul class="header__links">
+                  <li><a class="header__link header__link--active" href="index.html">Home</a></li>
+                  <li><a class="header__link" href="https://github.com">Projects</a></li>
+                  <li><a class="header__link" href=".\resume\Abdalkarim-Abusalama-resume.pdf">Resume</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <section class="intro-banner">
+          <h1 class="intro-banner__title">Hi, I'm Abdalkarim</h1>
+          <p class="intro-banner__description">Front-end developer with a passion for clean code and design.</p>
+          <div class="intro-banner__actions">
+                  <a class="intro-banner__button" href="https://github.com/shomanabd" target="_blank">Github</a>
+                  <a class="intro-banner__button" href="https://www.linkedin.com/in/abdalkarim-abusalama/" target="_blank">Linkedin</a>
+          </div>
+      </section>
+
+      <main class="main-content">
+          <section class="projects">
+              <h2 class="projects__title">Projects</h2>
+              <div class="projects__list">
+                <article class="project">
+                    <div class="project__header">
+                        <h3 class="project__title">Portfolio Website</h3>
+                    </div>
+                    <p class="project__description">
+                      Personal portfolio showcasing my front-end projects.
+                    </p>
+                    <a class="project__link" href="https://github.com/shomanabd/Udacity-portfolio-site" target="_blank">View Project</a>
+                  </article>
+
+                  <article class="project">
+                    <div class="project__header">
+                        <h3 class="project__title">Task Allocator Pro</h3>
+                    </div>
+                    <p class="project__description">
+                      Smart task assignment system for teams.
+                    </p>
+                    <a class="project__link" href="https://github.com/shomanabd/Task-Allocator-Pro" target="_blank">View Project</a>
+                  </article>
+
+                  <article class="project">
+                    <div class="project__header">
+                        <h3 class="project__title">Gaza Electricity Data Management System</h3>
+                    </div>
+                    <p class="project__description">
+                      JavaFX-based system to manage and analyze Gaza electricity data.
+                    </p>
+                    <a class="project__link" href="https://github.com/shomanabd/gaza-electricity-linked-list-implementation" target="_blank">View Project</a>
+                  </article>
+            </div>
+          </section>
+
+          <section class="about">
+              <h2 class="about__title">About Me</h2>
+              <div class="about__content">
+                  <img class="about__image" src="./img/profile.jpeg" alt="Abdalkarim's photo">
+                  <div class="about__description">
+                      <p>
+                          I am a front-end developer with a passion for creating clean and efficient code. I enjoy working on projects that challenge my skills and allow me to learn new technologies.
+                      </p>
+                      <p>
+                          In my free time, I love exploring new programming languages, contributing to open-source projects, and staying updated with the latest trends in web development.
+                      </p>
+                  </div>
+              </div>
+          </section>
+
+          <section class="contact-us">
+            <h2 class="contact-us__title">Contact Me</h2>
+            <p class="contact-us__description">If you wish to inquire about a potential job opportunity, fill out the form below and I will get back to you in a timely manner.</p>
+              <form class="contact-us__form" action="#" method="post">
+                  <label id="label-name" for="name">Name:</label>
+                  <input class="contact-us__form-input" type="text" id="name" name="name" placeholder="e.g.John Smith" required>
+                  <label id="label-email" for="email">Email:</label>
+                  <input class="contact-us__form-input" type="email" id="email" name="email" placeholder="e.g.name@domain.tld" required>
+                  <label  id="label-message" for="message">Message:</label>
+                  <textarea class="contact-us__form-input" id="message" name="message" placeholder="Type your message here (between 20 and 500 characters)" minlength="20" maxlength="500" required></textarea>
+                  <button class="contact-us__form-buttons" type="submit">SUBMIT</button>
+              </form>
+          </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__text">&copy; Abdalkarim 2025</p>
+      </footer>
+  </body>
+</html>

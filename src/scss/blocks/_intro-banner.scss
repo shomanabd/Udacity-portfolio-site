@@ -1,0 +1,77 @@
+@use '../utils/utils';
+
+.intro-banner {
+    height: 45vh;
+    text-align: center;
+    background-color: #e9eff5;
+    color: utils.$text-color;
+    @include utils.border(0,bottom);
+    padding: 2rem;
+    animation: fadeIn 2.4s ease-out;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        animation: slideDown 1.2s ease-out;
+    }
+
+    &__description {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        opacity: 0.8;
+        animation: slideUp 1.5s ease-out;
+    }
+
+    &__actions {
+        margin-bottom: 1rem ;
+        @include utils.flex();
+        gap: 1rem;
+    }
+
+    &__button {
+        @include utils.button-base;
+        padding: 0.75rem 1.5rem;
+        background-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+        opacity: 0.7;
+        transform: scale(1.05);
+        }
+    }
+}
+
+// Animations
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
